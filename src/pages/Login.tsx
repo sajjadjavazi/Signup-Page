@@ -24,7 +24,8 @@ const Login: React.FC = () => {
             <Container
                 maxWidth="sm"
                 sx={{
-                    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                    backgroundColor: 'rgba(255, 255, 255, 0.6)',
+                    backdropFilter:"blur(5px)",
                     borderRadius: 2,
                     p: 4,
                 }}
