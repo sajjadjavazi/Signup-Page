@@ -16,7 +16,7 @@ const Login: React.FC = () => {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                backgroundImage: 'url(/assets/images/background.png)',
+                backgroundImage: 'url(src/assets/images/background.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}
