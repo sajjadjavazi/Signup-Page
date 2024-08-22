@@ -4,6 +4,17 @@ const API_KEY = '0ef9f7495881307c155715f57672ec45';
 const CURRENT_WEATHER_URL = 'https://api.openweathermap.org/data/2.5/weather';
 const FORECAST_URL = 'https://api.openweathermap.org/data/2.5/forecast';
 
+export const getCoordinates = async (city: string): Promise<{ lat: number; lon: number }> => {
+    const apiKey = '0ef9f7495881307c155715f57672ec45';
+    const response = await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+    );
+    if (!response.ok) {
+        throw new Error('Failed to fetch coordinates');
+    }
+    const data = await response.json();
+    return { lat: data.coord.lat, lon: data.coord.lon };
+};
 export interface CurrentWeather {
     temp: number;
     weather: {
