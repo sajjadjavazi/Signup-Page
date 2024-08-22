@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, CardContent, Typography, Grid, Box } from '@mui/material';
 import { CurrentWeather, ForecastData } from '../../services/weatherService';
 
@@ -15,8 +14,14 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ currentWeather, forecas
     return (
         <Box>
             {/* Current Weather */}
-            <Card sx={{ mb: 4 }}>
-                <CardContent>
+            <Card sx={{
+                mb: 4,
+                backgroundColor: 'rgba(255, 255, 255, 0.6)',
+                borderRadius: 6,
+                backdropFilter: 'blur(2px)',
+                boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+            }}>
+                <CardContent sx={{m:2}}>
                     <Typography variant="h4" gutterBottom>
                         Current Weather
                     </Typography>
@@ -41,13 +46,18 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ currentWeather, forecas
             </Card>
 
             {/* 5-Day Forecast */}
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h4" gutterBottom color={'white'}>
                 5-Day Forecast
             </Typography>
             <Grid container spacing={2}>
                 {forecastData.map((forecast, index) => (
                     <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-                        <Card>
+                        <Card sx={{
+                            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                            borderRadius: 5,
+                            backdropFilter: 'blur(2px)',
+                            boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                        }}>
                             <CardContent>
                                 <Typography variant="h6">
                                     {new Date(forecast.dt * 1000).toLocaleString()}
