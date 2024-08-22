@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+# Breeze | Demo
+**Breeze is a simple yet elegant weather application that allows users to get current weather information for any location around the world. With a clean and intuitive interface, Breeze provides essential weather details, making it a perfect tool for anyone who wants to stay updated with the latest weather conditions.**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Features
+- User Authentication: Secure sign-up and sign-in functionality to create and manage user accounts.
+- Weather Search: Search for weather information by city name.
+- Current Weather Data: Get the current temperature, weather conditions, humidity, wind speed, and more.
+- 5-Day Forecast: View a 5-day weather forecast with a 3-hour time step.
+- Location-Based Weather: Automatically fetch weather data based on the user's location.
+- Responsive Design: Fully responsive layout that works seamlessly on all devices.
+- Logout Functionality: Securely log out of the application at any time.
+## Tech Stack
+- Frontend: React, TypeScript, Material-UI
+- Backend: OpenWeatherMap API, Axios, Validator
+- Authentication: Custom hooks and localStorage
+## Project structure
+```javascript
+├── public
+│   ├── assets
+│   │   └── images
+│   └── index.html
+├── src
+│   ├── components
+│   │   ├── AuthForm
+│   │   │   ├── SignInForm.tsx
+│   │   │   └── SignUpForm.tsx
+│   │   └── Weather
+│   │   │   └── WeatherDisplay.tsx
+│   │   └── SearchBar.tsx
+│   ├── hooks
+│   │   └── useAuth.tsx
+│   ├── pages
+│   │   ├── Home.tsx
+│   │   └── Login.tsx
+│   ├── services
+│   │   └── weatherService.ts
+│   ├── App.tsx
+│   ├── routes.tsx
+│   └── index.tsx
+├── .gitignore
+├── package.json
+└── README.md
+...
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Contributing
+Contributions are welcome! Please fork this repository, create a new branch, and submit a pull request with your changes.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## License
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/sajjadjavazi/Weather-Application/blob/master/LICENSE "LICENSE") file for details.
