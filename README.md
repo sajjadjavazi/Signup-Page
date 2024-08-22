@@ -1,5 +1,6 @@
 # Breeze |  [Demo](https://sajjadjavazi.github.io/Weather-Application/ "Demo") | [Video Demo](https://drive.google.com/file/d/1XlXsFwrgB_ibcg5CeXjygVDngz-nRn6e/view?usp=sharing "Video Demo")
-**Breeze is a simple yet elegant weather application that allows users to get current weather information for any location around the world. With a clean and intuitive interface, Breeze provides essential weather details, making it a perfect tool for anyone who wants to stay updated with the latest weather conditions.**
+**Breeze is a simple yet elegant weather application that allows users to get current weather information for any location around the world. With a clean and intuitive interface, Breeze provides essential weather details, making it a perfect tool for anyone who wants to stay updated with the latest weather conditions.
+I suggest you to check the video demo**
 
 ## Features
 - User Authentication: Secure sign-up and sign-in functionality to create and manage user accounts.
