@@ -14,11 +14,14 @@ const Home: React.FC = () => {
     navigate('/login');
   };
 
+  const lat = 40.7128;
+  const lon = -74.0060;
+
   return (
     <div>
       <Header />
       <Container>
-        <WeatherDisplay />
+        <WeatherDisplay lat={lat} lon={lon} />
         <WeatherDetails />
         <Button variant="contained" color="secondary" fullWidth onClick={handleLogoutClick} sx={{ mt: 3 }}>
           Logout
