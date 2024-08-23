@@ -34,7 +34,8 @@ const Login: React.FC = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundImage: 'url(src/assets/images/background.png)',
+        // backgroundImage: 'url(src/assets/images/background.png)',
+        background:'linear-gradient(to right, #00b09b, #96c93d)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
 

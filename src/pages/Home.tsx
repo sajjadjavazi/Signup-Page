@@ -40,7 +40,8 @@ const Home: React.FC = () => {
     <Box
       sx={{
         minHeight: '100vh',
-        backgroundImage: 'url(src/assets/images/weather-background.jpg)',
+        // backgroundImage: 'url(src/assets/images/weather-background.jpg)',
+        background:'linear-gradient(to right, #e0eafc, #cfdef3)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
