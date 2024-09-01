@@ -14,6 +14,12 @@ I suggest you to check the video demo**
 - Frontend: React, TypeScript, Material-UI
 - Backend: OpenWeatherMap API, Axios, Validator
 - Authentication: Custom hooks and localStorage
+ <p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,ts,js,vite,html,mui,git,github,npm,vscode&theme=dark" />
+  </a>
+</p>
+
 ## Project structure
 ```javascript
 ├── public
